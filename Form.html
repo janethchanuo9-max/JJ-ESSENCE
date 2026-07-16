@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JJ-Essence | Register</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">JJ-Essence</div>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Products.html">Products</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Form.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+      <br><br>
+      <label for="payment">payment method</label>
+      <select id="payment"name="payment"
+      <option value="">--chagua njia ya Malipo --</option>
+      <option>M-PESA</option>
+      <option>AIRTEL MONEY</option>
+      <option>TIGO PESA</option>
+      <option>HALO PESA</option>
+      <option>NMB ACCOUNT</option>
+      <option>CRDB ACCOUNT</option>
+    </select>
+    <br><br>
+    <p id="ACCOUNTINFO"></p>
+      <input type="submit" value="PAY NOW" />
+    </form>
+  </main>
+<script>
+  const payment =
+  document.getElementById("payment");
+  const ACCOUNTINFO =
+  document.getElementById("ACCOUNTINFO");
+Payment.AddEventListener("change",function(){
+  if (this.value === "M-PESA"){
+    accountinfo.innerHTML="M-PESA:0741234567";
+  }
+  else if (this .value ==="AIRTEL MONEY"){
+    accountinfo.innerHTML="AIRTEL MONEY:0781234567";
+  }
+  else if (this .value ==="TIGO PESA"){
+    accountinfo.innerHTML="TIGO PESA:0711234567";
+  }
+  else if (this .value ==="HALO PESA"){
+    accountinfo.innerHTML="HALO PESA:0621234567";
+  }
+  else if (this .value ==="NMB ACCOUNT"){
+    accountinfo.innerHTML="NMB ACCOUNT:123456789";
+  }
+  else if (this .value ==="CRDB ACCOUNT"){
+    accountinfo.innerHTML="CRDB ACCOUNT:987654321";
+  }
+})
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mawasiliano Yetu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .contact-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            overflow: hidden;
+            border-top: 6px solid #0078d4;
+        }
+        .card-header {
+            background: #0078d4;
+            color: #ffffff;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        .card-header h2 {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .card-body {
+            padding: 30px 25px;
+        }
+        .info-section {
+            margin-bottom: 25px;
+        }
+        .info-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #0078d4;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .info-content {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+        .btn-container {
+            margin-top: 10px;
+        }
+        .call-btn {
+            display: block;
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+        }
+        .call-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-card">
+        <div class="card-header">
+            <h2>Mawasiliano Yetu</h2>
+        </div>
+        <div class="card-body">
+            <div class="info-section">
+                <div class="info-title">Mahali Tunapopatikana</div>
+                <div class="info-content">IRINGA MJINI, MTAA WA UHINDINI</div>
+            </div>
+            
+            <div class="info-section">
+                <div class="info-title">Namba ya Simu</div>
+                <div class="info-content">0768723455</div>
+            </div>
+
+            <div class="btn-container">
+                <a href="tel:0768723455" class="call-btn">Piga Simu Sasa</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
